@@ -199,9 +199,9 @@ body {
 }
 .slides > article.next {
     display: block;
-    transform: translate(780px) scale(.5);
-    -o-transform: translate(780px) scale(.5);
-    -moz-transform: translate(780px) scale(.5);
+    transform: translate(1020px);
+    -o-transform: translate(1020px);
+    -moz-transform: translate(1020px);
     -webkit-transform: rotate3d(1, 0, 0, -90deg);
     opacity: 0;
     z-index: 1;
