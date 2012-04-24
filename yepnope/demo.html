@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>YepNope Demo</title>
+
+    <script src="yepnope.min.js"></script>
+
+    <script>
+        // Parses a JSON string and displays something from the result
+        function parseData() {
+            var raw = '{"result":{"message":"Yay for polyfills!"}}',
+                parsed = JSON.parse(raw);
+
+            alert(parsed.result.message);
+        }
+
+//        window.onload = parseData;
+
+        // Load the json2.js polyfill if needed, and run the parseData function
+        yepnope({
+            test: window.JSON,
+            nope: 'json2.js',
+            complete: parseData
+        });
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>
